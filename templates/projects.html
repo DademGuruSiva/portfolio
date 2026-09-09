@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Projects | DADEM GURU SIVA{% endblock %}
+
+{% block content %}
+<section class="page-hero compact">
+    <div class="page-hero-content reveal">
+        <p class="eyebrow">Projects</p>
+        <h1>Selected work with screenshots and technology context.</h1>
+        <p>Each project card keeps the goal, stack, and link close together for faster review.</p>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="content-grid three-columns">
+        
+        <!-- Hospital Management System -->
+        <article class="portfolio-card project-card reveal" style="--delay: 00ms;">
+            <img src="{% static 'images/Hospital.png' %}" class="card-media project-media" alt="Hospital Management System">
+
+            <div class="card-body">
+                <span class="badge">Featured Project</span>
+                <h2>Hospital Management System</h2>
+                <p>Developed 6+ modules, including Doctor, Patient, Appointment, Billing, and Payment Management. Designed and integrated 10+ REST APIs using Spring Boot and Spring Data JPA. Created a MySQL database with multiple relational tables to manage hospital records efficiently.</p>
+
+                <div class="tech-list" aria-label="Technologies used">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Spring Data JPA</span>
+                    <span>MySQL</span>
+                    <span>Thymeleaf</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+            </div>
+
+            <div class="card-actions">
+                <a href="https://github.com/DademGuruSiva/Hospital-Management-System" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+        </article>
+
+        <!-- Auditorium Management System -->
+        <article class="portfolio-card project-card reveal" style="--delay: 100ms;">
+            <div class="media-placeholder project-media">Auditorium System</div>
+
+            <div class="card-body">
+                <span class="badge">Academic Project</span>
+                <h2>Auditorium Management System</h2>
+                <p>Developed a web-based Auditorium Management System to automate event scheduling and seat booking with real-time availability tracking. Contributed to backend development, database design, and testing of event scheduling and seat booking modules[cite: 1].</p>
+
+                <div class="tech-list" aria-label="Technologies used">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>JavaScript</span>
+                    <span>MySQL</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+            </div>
+
+            <div class="card-actions">
+                <button class="btn btn-disabled" type="button" disabled>No Project Link</button>
+            </div>
+        </article>
+
+    </div>
+</section>
+{% endblock %}

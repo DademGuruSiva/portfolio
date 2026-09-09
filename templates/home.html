@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home | DADEM GURU SIVA{% endblock %}
+
+{% block content %}
+<section class="home-hero" style="--hero-image: url('{% static 'about/siva.jpg' %}');">
+    <div class="hero-content reveal">
+        <p class="eyebrow">Java & Full Stack Developer</p>
+        <h1>Building clean, practical web applications.</h1>
+        <p class="hero-copy">
+            I create responsive full stack web applications with Java, Spring Boot, JDBC, HTML, CSS,
+            JavaScript, and MySQL, with a focus on RESTful APIs and reliable backend integration.
+        </p>
+
+        <div class="hero-actions">
+            <a href="{% static 'files/Guru_Siva_resume.pdf' %}" download class="btn btn-primary">Download Resume</a>
+            <a href="{% url 'projects' %}" class="btn btn-secondary">View Projects</a>
+        </div>
+
+        <div class="social-links" aria-label="Social links">
+            <a href="https://github.com/DademGuruSiva" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <img src="{% static 'images/github.png' %}" alt="">
+                <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <img src="{% static 'images/linkedin-logo.png' %}" alt="">
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://wa.me/919391106621" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp contact">
+                <img src="{% static 'images/whatsapp-logo.jpg' %}" alt="">
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="page-section intro-strip">
+    <div class="section-header reveal">
+        <p class="eyebrow">Portfolio Snapshot</p>
+        <h2>Focused on useful, readable, and maintainable work.</h2>
+        <p>
+            Explore my background, education, technical skills, and project work through
+            a smoother layout designed for quick scanning on every screen size.
+        </p>
+    </div>
+
+    <div class="feature-grid">
+        <a class="feature-card reveal" href="{% url 'about' %}" style="--delay: 50ms;">
+            <span class="feature-number">01</span>
+            <h3>About</h3>
+            <p>Profile, contact details, and career direction in one clear view.</p>
+        </a>
+        <a class="feature-card reveal" href="{% url 'skills' %}" style="--delay: 100ms;">
+            <span class="feature-number">02</span>
+            <h3>Skills</h3>
+            <p>Technical, soft, and language strengths grouped for easy review.</p>
+        </a>
+        <a class="feature-card reveal" href="{% url 'projects' %}" style="--delay: 150ms;">
+            <span class="feature-number">03</span>
+            <h3>Projects</h3>
+            <p>Project cards with screenshots, tools used, and direct links.</p>
+        </a>
+    </div>
+</section>
+{% endblock %}

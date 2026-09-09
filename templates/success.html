@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Message Sent | Dadem Guru Siva{% endblock %}
+
+{% block content %}
+<section class="page-section success-section">
+    <div class="success-panel reveal">
+        <span class="success-mark">OK</span>
+        <p class="eyebrow">Message Sent</p>
+        <h1>Thank you for reaching out.</h1>
+        <p>Your details were submitted successfully. I will get back to you soon.</p>
+        <div class="button-row center">
+            <a href="{% url 'home' %}" class="btn btn-primary">Go Back Home</a>
+            <a href="{% url 'projects' %}" class="btn btn-secondary">View Projects</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

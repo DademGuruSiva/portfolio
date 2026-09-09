@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Dadem Guru Siva, Full Stack Developer specializing in Java and Spring Boot.">
+    <title>{% block title %}Dadem Guru Siva | Portfolio{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a class="brand" href="{% url 'home' %}" aria-label="Go to home page">
+                <span class="brand-mark">DGS</span>
+                <span class="brand-text">Guru Siva</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <strong>Menu</strong>
+            </button>
+
+            <div class="nav-links" id="primary-menu">
+                <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
+                <a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a>
+                <a href="{% url 'portfolio_education' %}" class="{% if request.resolver_match.url_name == 'portfolio_education' %}active{% endif %}">Education</a>
+                <a href="{% url 'skills' %}" class="{% if request.resolver_match.url_name == 'skills' %}active{% endif %}">Skills</a>
+                <a href="{% url 'projects' %}" class="{% if request.resolver_match.url_name == 'projects' %}active{% endif %}">Projects</a>
+                <a href="{% url 'contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a>
+                <button class="theme-toggle" type="button" data-theme-toggle aria-label="Change color theme">Theme</button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <strong>DADEM GURU SIVA</strong>
+            <p>Java Developer | Full Stack Web Developer</p>
+        </div>
+        <a href="{% url 'contact' %}">Start a conversation</a>
+    </footer>
+
+    <script src="{% static 'js/site.js' %}" defer></script>
+</body>
+</html>

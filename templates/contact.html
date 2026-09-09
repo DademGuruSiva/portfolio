@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Contact | DADEM GURU SIVA{% endblock %}
+
+{% block content %}
+<section class="page-hero compact">
+    <div class="page-hero-content reveal">
+        <p class="eyebrow">Contact</p>
+        <h1>Share the role, project, or opportunity you want to discuss.</h1>
+        <p>I will review your message and get back to you as soon as possible.</p>
+    </div>
+</section>
+
+<section class="page-section contact-section">
+    <div class="contact-layout">
+        <aside class="contact-intro reveal">
+            <p class="eyebrow">Let's Connect</p>
+            <h2>Simple form, clear next step.</h2>
+            <p>
+                Send your contact details with a short message. The form is built to be easy to complete
+                on both mobile and desktop screens.
+            </p>
+            <div class="contact-points">
+                <span>Java & Full Stack Projects</span>
+                <span>Spring Boot REST APIs</span>
+                <span>Software Development Roles</span>
+            </div>
+        </aside>
+
+        <form method="post" class="contact-form reveal" style="--delay: 100ms;">
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+
+            <div class="form-grid">
+                <div class="form-field">
+                    <label for="{{ form.first_name.id_for_label }}">First Name</label>
+                    {{ form.first_name }}
+                    {{ form.first_name.errors }}
+                </div>
+
+                <div class="form-field">
+                    <label for="{{ form.last_name.id_for_label }}">Last Name</label>
+                    {{ form.last_name }}
+                    {{ form.last_name.errors }}
+                </div>
+
+                <div class="form-field">
+                    <label for="{{ form.email.id_for_label }}">Email</label>
+                    {{ form.email }}
+                    {{ form.email.errors }}
+                </div>
+
+                <div class="form-field">
+                    <label for="{{ form.phone_number.id_for_label }}">Phone Number</label>
+                    {{ form.phone_number }}
+                    {{ form.phone_number.errors }}
+                </div>
+
+                <div class="form-field full">
+                    <label for="{{ form.message.id_for_label }}">Message</label>
+                    {{ form.message }}
+                    {{ form.message.errors }}
+                </div>
+            </div>
+
+            <div class="button-row">
+                <a href="{% url 'home' %}" class="btn btn-secondary">Back Home</a>
+                <button type="submit" class="btn btn-primary">Submit Message</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

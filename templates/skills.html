@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Skills | DADEM GURU SIVA{% endblock %}
+
+{% block content %}
+<section class="page-hero compact">
+    <div class="page-hero-content reveal">
+        <p class="eyebrow">Skills</p>
+        <h1>Capabilities grouped by technical expertise and domain knowledge.</h1>
+        <p>Technical strengths, tools, and certifications based on resume data.</p>
+    </div>
+</section>
+
+<section class="page-section skill-group">
+    <div class="section-header reveal">
+        <p class="eyebrow">Technical Expertise</p>
+        <h2>Tools and Technologies</h2>
+    </div>
+
+    <div class="content-grid three-columns">
+        
+        <!-- Programming Language -->
+        <article class="portfolio-card skill-card reveal" style="--delay: 00ms;">
+            <div class="media-placeholder compact-media">JV</div>
+            <div class="card-body">
+                <span class="badge">Programming Language</span>
+                <h2>Java</h2>
+                <div class="rating" aria-label="Rating 5 out of 5">
+                    <span class="rating-meter"><span style="width: 100%;"></span></span>
+                    <strong>5/5</strong>
+                </div>
+                <p>Core Java, JDBC, object-oriented principles, and application logic building.</p>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-disabled" type="button" disabled>No Certification</button>
+            </div>
+        </article>
+
+        <!-- Framework -->
+        <article class="portfolio-card skill-card reveal" style="--delay: 100ms;">
+            <div class="media-placeholder compact-media">SB</div>
+            <div class="card-body">
+                <span class="badge">Framework</span>
+                <h2>Spring Boot</h2>
+                <div class="rating" aria-label="Rating 4 out of 5">
+                    <span class="rating-meter"><span style="width: 80%;"></span></span>
+                    <strong>4/5</strong>
+                </div>
+                <p>Developing RESTful APIs, backend services, and web application components.</p>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-disabled" type="button" disabled>No Certification</button>
+            </div>
+        </article>
+
+        <!-- Database -->
+        <article class="portfolio-card skill-card reveal" style="--delay: 200ms;">
+            <div class="media-placeholder compact-media">DB</div>
+            <div class="card-body">
+                <span class="badge">Database</span>
+                <h2>MySQL</h2>
+                <div class="rating" aria-label="Rating 4 out of 5">
+                    <span class="rating-meter"><span style="width: 80%;"></span></span>
+                    <strong>4/5</strong>
+                </div>
+                <p>Relational table design, SQL query writing, and backend data integration.</p>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-disabled" type="button" disabled>No Certification</button>
+            </div>
+        </article>
+
+        <!-- Web Technologies -->
+        <article class="portfolio-card skill-card reveal" style="--delay: 300ms;">
+            <div class="media-placeholder compact-media">WEB</div>
+            <div class="card-body">
+                <span class="badge">Web Technologies</span>
+                <h2>HTML, CSS & JavaScript</h2>
+                <div class="rating" aria-label="Rating 4 out of 5">
+                    <span class="rating-meter"><span style="width: 80%;"></span></span>
+                    <strong>4/5</strong>
+                </div>
+                <p>Building responsive web user interfaces and user-friendly layouts.</p>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-disabled" type="button" disabled>No Certification</button>
+            </div>
+        </article>
+
+        <!-- Build Tools & VCS -->
+        <article class="portfolio-card skill-card reveal" style="--delay: 400ms;">
+            <div class="media-placeholder compact-media">GIT</div>
+            <div class="card-body">
+                <span class="badge">Tools & Version Control</span>
+                <h2>Git, GitHub & Maven</h2>
+                <div class="rating" aria-label="Rating 4 out of 5">
+                    <span class="rating-meter"><span style="width: 80%;"></span></span>
+                    <strong>4/5</strong>
+                </div>
+                <p>Project dependency management, version tracking, and code repository management.</p>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-disabled" type="button" disabled>No Certification</button>
+            </div>
+        </article>
+
+        <!-- Testing & Tools -->
+        <article class="portfolio-card skill-card reveal" style="--delay: 500ms;">
+            <div class="media-placeholder compact-media">QA</div>
+            <div class="card-body">
+                <span class="badge">Testing & API Tools</span>
+                <h2>Postman & Manual Testing</h2>
+                <div class="rating" aria-label="Rating 4 out of 5">
+                    <span class="rating-meter"><span style="width: 80%;"></span></span>
+                    <strong>4/5</strong>
+                </div>
+                <p>API endpoint testing, test case execution, regression testing, and defect tracking.</p>
+            </div>
+            <div class="card-actions">
+                <a href="{% static 'skills/Intern-Certificate.jpeg' %}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Internship Certificate</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="page-section skill-group">
+    <div class="section-header reveal">
+        <p class="eyebrow">Professional</p>
+        <h2>IDEs & Servers</h2>
+    </div>
+
+    <div class="content-grid three-columns">
+        <article class="portfolio-card skill-card reveal" style="--delay: 00ms;">
+            <div class="media-placeholder compact-media">IDE</div>
+            <div class="card-body">
+                <span class="badge">Development Tools</span>
+                <h2>Eclipse, VS Code & Apache Tomcat</h2>
+                <p>Hands-on development using standard Java IDEs and application server setup.</p>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-disabled" type="button" disabled>No Certification</button>
+            </div>
+        </article>
+    </div>
+</section>
+{% endblock %}

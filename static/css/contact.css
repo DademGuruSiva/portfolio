@@ -1,0 +1,110 @@
+/* ================================
+   MODERN CONTACT FORM UI
+================================ */
+
+body {
+    background: #f3f4f6;
+}
+
+/* Wrapper */
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Card */
+.contact-card {
+    width: 100%;
+    max-width: 650px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.contact-card h2 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Row */
+.row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Input group */
+.input-group {
+    flex: 1;
+    position: relative;
+}
+
+/* Icons */
+.input-group i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #777;
+}
+
+/* Inputs */
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Textarea */
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Full width */
+.full {
+    width: 100%;
+}
+
+/* Buttons */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Back button */
+.back-btn {
+    background: #333;
+    color: white;
+}
+
+/* Submit button */
+.submit-btn {
+    background: linear-gradient(45deg, #ff4b7d, #ff2e63);
+    color: white;
+}
+
+/* Hover */
+.submit-btn:hover {
+    opacity: 0.9;
+}

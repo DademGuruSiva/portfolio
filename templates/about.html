@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About | DADEM GURU SIVA{% endblock %}
+
+{% block content %}
+<section class="page-hero compact">
+    <div class="page-hero-content reveal">
+        <p class="eyebrow">About Me</p>
+        <h1>Developer profile with the details recruiters need first.</h1>
+        <p>Clean background, clear contact information, and a quick read on what I build.</p>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="about-layout">
+        <div class="profile-panel reveal">
+            <img src="{% static 'images/siva.jpg' %}" alt="DADEM GURU SIVA" class="profile-portrait">
+            <div>
+                <p class="eyebrow">Available For</p>
+                <h2>Full Stack Web Development & Software Roles</h2>
+            </div>
+        </div>
+
+        <div class="about-copy reveal" style="--delay: 100ms;">
+            <h2>DADEM GURU SIVA</h2>
+            <p>Motivated MCA graduate with strong skills in Core Java, JDBC, HTML, CSS, JavaScript, and MySQL. Experienced in developing responsive full-stack web applications and implementing RESTful APIs.</p>
+
+            <div class="detail-list" aria-label="Contact details">
+                <div>
+                    <span>Email</span>
+                    <a href="mailto:gurusiva14896@gmail.com">gurusiva14896@gmail.com</a>
+                </div>
+                <div>
+                    <span>Phone</span>
+                    <a href="tel:+919391106621">+91 9391106621</a>
+                </div>
+                <div>
+                    <span>Location</span>
+                    <strong>Bangalore, India</strong>
+                </div>
+            </div>
+
+            <div class="button-row">
+                <a href="{% url 'contact' %}" class="btn btn-primary">Contact Me</a>
+                <a href="{% url 'projects' %}" class="btn btn-secondary">See Projects</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

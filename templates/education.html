@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Education | DADEM GURU SIVA{% endblock %}
+
+{% block content %}
+<section class="page-hero compact">
+    <div class="page-hero-content reveal">
+        <p class="eyebrow">Education</p>
+        <h1>Academic background presented for fast review.</h1>
+        <p>Institutions, results, supporting documents, and summaries organized in a responsive grid.</p>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="content-grid three-columns">
+        
+        <!-- MCA -->
+        <article class="portfolio-card reveal" style="--delay: 00ms;">
+            <div class="media-placeholder">Education</div>
+
+            <div class="card-body">
+                <span class="badge">Post Graduation</span>
+                <h2>Mother Theresa Institutions</h2>
+
+                <dl class="meta-list">
+                    <div>
+                        <dt>Degree</dt>
+                        <dd>MCA (Master of Computer Applications)</dd>
+                    </div>
+                    <div>
+                        <dt>Passing Year</dt>
+                        <dd>2023 - 2025</dd>
+                    </div>
+                    <div>
+                        <dt>CGPA</dt>
+                        <dd>7.8</dd>
+                    </div>
+                </dl>
+
+                <p>Master of Computer Applications focusing on software development and computer science core concepts.</p>
+            </div>
+
+            <div class="card-actions">
+                <button class="btn btn-disabled" type="button" disabled>No Marksheet</button>
+            </div>
+        </article>
+
+        <!-- B.Sc -->
+        <article class="portfolio-card reveal" style="--delay: 100ms;">
+            <!-- <img src="{% static 'education/images/Shri Gnmb.png' %}" class="card-media" alt="Shri Gnanambica Degree College"> -->
+            <img src="{% static 'images/Shri Gnmb.png' %}" class="card-media" alt="Shri Gnanambica Degree College">
+
+            <div class="card-body">
+                <span class="badge">Graduation</span>
+                <h2>Shri Gnanambica Degree College</h2>
+
+                <dl class="meta-list">
+                    <div>
+                        <dt>Degree</dt>
+                        <dd>B.Sc (MSCs)</dd>
+                    </div>
+                    <div>
+                        <dt>Passing Year</dt>
+                        <dd>2020 - 2023</dd>
+                    </div>
+                    <div>
+                        <dt>CGPA</dt>
+                        <dd>7.9</dd>
+                    </div>
+                </dl>
+
+                <p>Bachelor of Science with specialization in Mathematics, Statistics, and Computer Science.</p>
+            </div>
+
+            <div class="card-actions">
+                <a href="{% static 'images/Degree.jpg' %}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Marksheet</a>
+            </div>
+        </article>
+
+        <!-- Intermediate -->
+        <article class="portfolio-card reveal" style="--delay: 200ms;">
+            <img src="{% static 'education/images/intermediateLogo.png' %}" class="card-media" alt="Sri Vivekananda Jr College">
+
+            <div class="card-body">
+                <span class="badge">Intermediate</span>
+                <h2>Sri Vivekananda Jr College</h2>
+
+                <dl class="meta-list">
+                    <div>
+                        <dt>Stream</dt>
+                        <dd>Intermediate (MPC)</dd>
+                    </div>
+                    <div>
+                        <dt>Passing Year</dt>
+                        <dd>2018 - 2020</dd>
+                    </div>
+                    <div>
+                        <dt>CGPA</dt>
+                        <dd>6.87</dd>
+                    </div>
+                </dl>
+
+                <p>Higher Secondary Education in Mathematics, Physics, and Chemistry.</p>
+            </div>
+
+            <div class="card-actions">
+                <a href="{% static 'images/Inter.jpg' %}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Marksheet</a>
+            </div>
+        </article>
+
+        <!-- SSC -->
+        <article class="portfolio-card reveal" style="--delay: 300ms;">
+            <img src="{% static 'education/images/ZPHLOGO.png' %}" class="card-media" alt="Secondary School (SSC)">
+
+            <div class="card-body">
+                <span class="badge">Schooling</span>
+                <h2>Secondary School (SSC)</h2>
+
+                <dl class="meta-list">
+                    <div>
+                        <dt>Board</dt>
+                        <dd>SSC Board</dd>
+                    </div>
+                    <div>
+                        <dt>Passing Year</dt>
+                        <dd>2017 - 2018</dd>
+                    </div>
+                    <div>
+                        <dt>CGPA</dt>
+                        <dd>8.7</dd>
+                    </div>
+                </dl>
+
+                <p>Secondary School Certificate with strong academic foundation.</p>
+            </div>
+
+            <div class="card-actions">
+                <a href="{% static 'images/SSC.jpg' %}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Marksheet</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+{% endblock %}
